@@ -977,7 +977,7 @@ elseif ($page == "contactus") {
 
 
   <section class="contactuspage" id="contactuspage" data-aos="fade-left"
-       data-aos-duration="1000" style="padding-bottom;">
+       data-aos-duration="1000">
     <div class="container">
 
 

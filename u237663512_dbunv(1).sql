@@ -46,29 +46,6 @@ INSERT INTO `comments` (`id`, `comment`, `fname`, `title`, `status`, `store`, `c
 
 -- --------------------------------------------------------
 
---
--- Table structure for table `consultation`
---
-
-CREATE TABLE `consultation` (
-  `id` int(11) NOT NULL,
-  `fname` varchar(255) NOT NULL,
-  `title` varchar(255) NOT NULL,
-  `email` varchar(255) NOT NULL,
-  `content` varchar(255) NOT NULL,
-  `repons` longtext NOT NULL,
-  `whats` varchar(255) NOT NULL,
-  `created` date NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_general_ci;
-
---
--- Dumping data for table `consultation`
---
-
-INSERT INTO `consultation` (`id`, `fname`, `title`, `email`, `content`, `repons`, `whats`, `created`) VALUES
-(26, 'aaa', '', 'aaa', 'contact me', 'done', '123', '2024-12-28'),
-(27, 'aaa', '', 'haifa.att02@gmail.com', 'contact me', '', '123', '2024-12-28'),
-(28, 'aaa', '', 'haifa.att02@gmail.com', 'contact me', 'done', '123', '2024-12-28');
 
 -- --------------------------------------------------------
 
@@ -233,11 +210,6 @@ CREATE TABLE `visitors` (
 ALTER TABLE `comments`
   ADD PRIMARY KEY (`id`);
 
---
--- Indexes for table `consultation`
---
-ALTER TABLE `consultation`
-  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `notifications`
@@ -285,11 +257,6 @@ ALTER TABLE `visitors`
 ALTER TABLE `comments`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
---
--- AUTO_INCREMENT for table `consultation`
---
-ALTER TABLE `consultation`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
 
 --
 -- AUTO_INCREMENT for table `notifications`

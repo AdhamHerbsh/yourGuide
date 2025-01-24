@@ -51,24 +51,11 @@
 
       if (empty($formErrors))
       {
-        $stmt = $conn->prepare("INSERT INTO consultation(fname,email,content,whats,created)
-         VALUES(:zf,:ze,:zm,:zwa,now())");
-        $stmt->execute(array(
-          'zf' => $fname,
-          'ze' => $email,
-          'zm' => $message,
-          'zwa' => $whats
-
-
-        ));
         $stmt = $conn->prepare("INSERT INTO notifications(fname,content,created)
          VALUES(:zf,:ze,now())");
         $stmt->execute(array(
           'zf' => $fname,
           'ze' => $message
-
-
-
         ));
 
         ?>

@@ -36,7 +36,7 @@ if (isset($_SESSION['admin']))
 
     if ($_SERVER['REQUEST_METHOD'] == 'POST')
     {
-      $username = filter_var($_POST['username'], FILTER_SANITIZE_STRING);
+      $username = $_POST['username'];
       $password = sha1($_POST['password']);
 
 
