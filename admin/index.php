@@ -5,7 +5,7 @@ if (isset($_SESSION['admin']))
 {
   header('location: users.php');
 }
-    $pageTitle = 'dashboard - admin login';
+    $pageTitle = 'index - admin login';
     $noNavbar = '';
     include 'init.php';
     $stmt = $conn->prepare("SELECT * FROM pages WHERE id = 1");

@@ -55,7 +55,6 @@
                   <table class="table" id="users-table" style="margin-top:60px">
                     <thead>
                       <tr>
-                        <th scope="col">id</th>
                         <th scope="col">image</th>
                         <th scope="col">full name</th>
                         <th scope="col">Username</th>
@@ -74,9 +73,6 @@
                       {
                         ?>
                         <tr>
-                          <td>
-                            <p><?php echo $user['id'] ?></p>
-                          </td>
                           <td>
                             <div class="avatar">
                               <?php
@@ -650,7 +646,7 @@
     }
 
     else {
-      header('location: dashboard.php');
+      header('location: index.php');
     }
 
     ?>

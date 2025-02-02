@@ -205,7 +205,7 @@ delete
 
 
     else {
-      header('location: dashboard.php');
+      header('location: index.php');
     }
 
     ?>

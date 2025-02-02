@@ -359,21 +359,21 @@ img
       fill: white
 }
 /* sidebar end */
-/* dashboard begin */
-.dashboard .content-header
+/* index begin */
+.index .content-header
 {
       margin: 12px 0;
       margin-bottom: 20px;
       text-align: left;
       margin-bottom: 10px !important;
 }
-.dashboard-overview
+.index-overview
 {
       text-transform: capitalize;
       font-weight: bold;
       color: #575757;
 }
-.dashboard-profile
+.index-profile
 {
       background-color: #fff;
       box-shadow: 0 .75rem 1.5rem rgb(237, 237, 237);
@@ -428,7 +428,7 @@ img
 {
       margin: 20px 0
 }
-.dashboard-profile .name-spc  p
+.index-profile .name-spc  p
 {
       font-size: 14px;
       text-transform: capitalize;
@@ -436,7 +436,7 @@ img
       margin: 10px 0;
       margin-bottom: 0
 }
-.dashboard-profile .name-spc span
+.index-profile .name-spc span
 {
       font-size: 13px;
       text-transform: capitalize;
@@ -456,7 +456,7 @@ img
       background-color: #0d58cd;
       transition: .5s
 }
-.dashboard .box
+.index .box
 {
       background-color: #f1f1f1;
       padding: 30px 10px;
@@ -467,7 +467,7 @@ img
       border-radius: 10px;
       padding-top: 50px !important;
 }
-.dashboard .box::before
+.index .box::before
 {
       /*! content: 'dash'; */
       position: absolute;
@@ -478,7 +478,7 @@ img
       top: 0
 }
 
-.dashboard .box svg
+.index .box svg
 {
       /*! content: 'dash'; */
       /*! position: absolute; */
@@ -490,18 +490,18 @@ img
       width: 80px;
       height: 70px;
 }
-.dashboard .box svg path
+.index .box svg path
 {
       fill: var(--mainColor);
 }
-.dashboard .box p,.dashboard .sm-box p
+.index .box p,.index .sm-box p
 {
       text-transform: capitalize;
       color: black;
       margin-bottom: 5px;
       font-size: 14px;
 }
-.dashboard .box span
+.index .box span
 {
       font-size: 17px;
       font-weight: bold;
@@ -513,12 +513,12 @@ img
       padding: 0px 0px;
       width: 98%;
 }
-.dashboard .box:hover,.dashboard .sm-box:hover
+.index .box:hover,.index .sm-box:hover
 {
       box-shadow: 0px 10px 20px rgba(0,0,0,.05);
       transition: .5s
 }
-.dashboard .sm-box
+.index .sm-box
 {
       position: relative;
       background-color: #12629f;
@@ -527,7 +527,7 @@ img
       border-radius: 10px;
 }
 
-.dashboard .sm-box a
+.index .sm-box a
 {
       font-size: 20px;
       color: white;
@@ -535,14 +535,14 @@ img
 }
 
 
-.dashboard .sm-box p
+.index .sm-box p
 {
       font-weight: bold;
       font-size: 16px;
       color: white;
 }
 
-/* dashboard end */
+/* index end */
 
 /* managment pages */
 .page-direction-bnts
@@ -1733,12 +1733,12 @@ textarea
 }
 
   @media (min-width: 768px){
-.dashboard .col-md-3 {
+.index .col-md-3 {
   -ms-flex: 0 0 25%;
   flex: 0 0 25%;
   max-width: 22%;
 }
-  .dashboard .col-md-4
+  .index .col-md-4
         {
               max-width: 100% !important;
         }
@@ -1754,7 +1754,7 @@ textarea
       position: absolute;
       right: 10px
 }
-.dashboard .col-md-4 .col-md-12
+.index .col-md-4 .col-md-12
 {
       padding: 0 !important;
 }

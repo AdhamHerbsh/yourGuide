@@ -130,57 +130,27 @@ if ($page == 'search') {
                 </div>
                 <div class="ibox-content" style="padding-top:40px;">
                   <div class="row">
-                    <?php
-                    foreach ($bodoks as $of) {
-
-                    ?>
+                    <?php foreach ($bodoks as $of) { ?>
                       <div class="col-md-3">
-                        <div class=" active" style="width: 100%; margin-right: 0px;">
+                        <div class=" active">
                           <div class="product-default inner-quickview inner-icon">
-
-                            <figure class="img-effect">
-                              <a href="webpage.php?page=product&id=<?php echo $of['id'] ?>">
-                                <img src="<?php echo $images . $of['image'] ?>" alt="product" width="100%" height="205">
-                              </a>
-                              <div class="label-group">
-
+                              <a href="webpage.php?page=product&id=<?php echo $of['id'] ?>"><img src="<?php echo $images . $of['image'] ?>" alt="product" width="100%" height="205"></a>
+                            <div class="row m-2">
+                              <div class="col-6">
+                                <a href="store.php?page=deletefv&id=<?php echo $of['id'] ?>"> <i class="fa fa-trash"></i> حذف</a>
                               </div>
-
-
-
-                            </figure>
-                            <div class="product-details">
-                              <a href="store.php?page=deletefv&id=<?php echo $of['id'] ?>" <?php  ?> class="fas fa- " style="position: absolute;top:0;right:0;z-index:8px;;cursor:pointer;margin:10px;font-size:13px;color:black">حذف</a>
-
-                              <div class="category-wrap">
-                                <div class="category-list">
-
-                                  <a href="webpage.php?page=product&id=<?php echo $of['id'] ?>" style="font-size:13px !important" class="product-category">%<?php echo $of['discount'] ?></a>
-                                </div>
-
+                              <div class="col-6">
+                                <a href="webpage.php?page=product&id=<?php echo $of['id'] ?>"><?php echo $of['title'] ?></a>                               
                               </div>
-                              <h3 style="font-size:20px !important;color:black" class="product-title"> <a href="webpage.php?page=product&id=<?php echo $of['id'] ?>"><?php echo $of['title'] ?></a> </h3>
-
                             </div>
                           </div>
                         </div>
-
-
-
-
                       </div>
-
-                    <?php
-                    }
-                    ?>
+                    <?php } ?>
                   </div>
-
                 </div>
-
               </div>
-
             </div>
-
           </div>
         </div>
       </div>

@@ -20,25 +20,18 @@ include 'init.php';
 <div class="re">
   <div class="container-fluid" style="padding:0">
     <div class="row justify-content-end">
-
       <div class="col-md-12">
-
         <div class="swiper mySwiperd" style="padding-bottom:0px !important">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <img class="d-block w-100 mainimg" src="<?php echo $images . $page['h_image'] ?>" style="height:600px !important" alt="First slide">
+              <img class="d-block w-100 mainimg" src="<?php echo $images . $page['h_image'] ?>" style="height:760px !important" alt="First slide">
               <div class="overylay content">
-
               </div>
             </div>
-
-
-
           </div>
           <div class="swiper-pagination"></div>
         </div>
       </div>
-
     </div>
   </div>
 </div>
@@ -89,7 +82,7 @@ include 'init.php';
                   <div class="mmrep">
                     <h3><?php echo $offer['title'] ?></h3>
                     <p><?php echo $offer['descr'] ?></p>
-                    <a href="webpage.php?page=product&id=<?php echo $offer['id'] ?>" class="btn">مشاهدة العرض</a>
+                    <a href="webpage.php?page=product&id=<?php echo $offer['id'] ?>" class="btn btn-primary">مشاهدة العرض</a>
                   </div>
                 </div>
 
@@ -205,7 +198,6 @@ if (!empty($posts)) {
               <div class="content-box">
                 <ul class="post-info">
                   <li><i class="fa fa-user-circle"></i> by Admin</li>
-                  <li><i class="fa fa-file"></i> <?php echo $post['id'] ?> </li>
                 </ul>
                 <h4 class="title"><a style="color:black" href="webpage.php?page=portfolio&id=<?php echo $post['id'] ?>"><?php echo $post['title'] ?></a></h4>
                 <p style="font-size:13px"><?php $text = strip_tags($post['content']);

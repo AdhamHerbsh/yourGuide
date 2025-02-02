@@ -278,7 +278,7 @@
 
 
                               else {
-                                header('location: dashboard.php');
+                                header('location: index.php');
                               }
 
       include $tpl . 'footer.php';
@@ -321,7 +321,7 @@
 
     }
     else {
-      header('location: dashboard.php');
+      header('location: index.php');
     }
 
     ?>
