@@ -142,7 +142,7 @@ include 'init.php';
   <div class="container-fluid">
     <div class="row">
       <?php
-      $stmt = $conn->prepare("SELECT * FROM users WHERE type = 0 ORDER BY id DESC  LIMIT 2 ");
+      $stmt = $conn->prepare("SELECT * FROM users WHERE type = 0 ORDER BY id DESC  LIMIT 2");
       $stmt->execute();
       $users = $stmt->fetchAll();
       foreach ($users as $user) {
